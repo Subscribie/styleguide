@@ -1,1 +1,1 @@
-# [View]('https://subscribie.github.io/styleguide/')
+# [View]: https://subscribie.github.io/styleguide/

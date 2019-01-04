@@ -6,11 +6,6 @@
 <h2>We call these a "usp-card" (unique selling point)</h2>
 <p>They comprise of an image, heading, and muted text.</p>
 <hr />
-<style>
-    usp-card {
-        margin: 100px;
-    }
-</style>
 
 <template id="usp-card">                                                     
     <link rel="stylesheet" type="text/css" href="style.css" >
@@ -85,5 +80,34 @@ customElements.define('usp-card',
     Connect the domain name of your choice with a few clicks
     </span>
 </usp-card>
+
+<h1>We may arrange multiple <em>&lt;usp-card&gt</em> in a grid:</h1>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr);">
+<usp-card></usp-card>
+<usp-card>
+    <span slot="title">Detailed payment history</span>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    Your accountant will say thank you due to well-organised reports
+    </span>
+</usp-card>
+<usp-card>
+    <span slot="title">Easy custom domains</span>
+    <i class="callout" slot="callout">soon</i>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    Connect the domain name of your choice with a few clicks
+    </span>
+</usp-card>
+<usp-card></usp-card>
+<usp-card></usp-card>
+</div>
 
 </html>

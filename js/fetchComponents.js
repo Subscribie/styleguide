@@ -21,7 +21,7 @@ async function fetchComponents(components) {
 }
 
 function fetchComponent(componentName) {
-    let componentDir = '/components';
+    let componentDir = '/styleguide/components';
     template = componentDir + '/' + componentName + '/' + componentName + '.component.html'
     customElement = componentDir + '/' + componentName + '/' + componentName + '.component.js'
 

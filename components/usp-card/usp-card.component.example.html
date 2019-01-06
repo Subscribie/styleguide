@@ -1,0 +1,53 @@
+<!DOCTYPE html>                                                                  
+<html>
+<link rel="stylesheet" type="text/css" href="/style.css" >
+<script src="/js/fetchComponents.js"></script>
+
+<script>
+
+components = ['usp-card'];
+
+fetchComponents(components);
+
+</script>
+<body>
+
+<h1>&lt;usp-card&gt</h1>
+
+<h2>We call these a "usp-card" (unique selling point)</h2>
+<p>They comprise of an image, heading, and muted text.</p>
+<hr />
+
+<p>Default Card:</p>
+<usp-card></usp-card>
+<p>Card with custom image, title, and text:</p>
+<usp-card>
+    <span slot="title">Detailed payment history</span>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="/images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    Your accountant will say thank you due to well-organised reports
+    </span>
+</usp-card>
+<p>Card with additional 'soon' callout:</p>
+<usp-card>
+    <span slot="title">Easy custom domains</span>
+    <i class="callout" slot="callout">soon</i>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="/images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    Connect the domain name of your choice with a few clicks
+    </span>
+</usp-card>
+
+<p>We may arrange multiple <em>&lt;usp-card&gt</em> 
+    <a href="/components/usp-grid/usp-grid.component.example.html">
+    in a grid</a>.
+</p>
+
+</body>
+</html>

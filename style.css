@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F8F8F8;
 }
 h1, h2 {
     font-family: 'Poppins', sans-serif;

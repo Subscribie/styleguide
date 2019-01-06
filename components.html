@@ -1,6 +1,16 @@
 <!DOCTYPE html>                                                                  
-<html>                                                                           
+<html>
 <link rel="stylesheet" type="text/css" href="style.css" >
+<script src="js/fetchComponents.js"></script>
+
+<script>
+
+components = ['usp-card', 'usp-grid'];
+
+fetchComponents(components);
+
+</script>
+<body>
 
 <h1>Heading one with subtext:<h1>
 
@@ -19,53 +29,7 @@
 <p>They comprise of an image, heading, and muted text.</p>
 <hr />
 
-<template id="usp-card">                                                     
-    <link rel="stylesheet" type="text/css" href="style.css" >
-    <style>
-        p { color: #7D7D7D; }
-        h2 { display: inline; }
-        .img-wrapper { width: 48px; height: 48px;}
-        ::slotted(.callout) {
-            text-transform: uppercase;
-            background-color: #2CDFA8;
-            border-radius: 4px;
-            color: #FFFFFF;
-            font-size: 12px;
-            letter-spacing: 0.5px;
-            line-height: 16px;
-            padding: 4px;
-        } 
-    </style>
-
-    <div class="img-wrapper">
-    <slot name="image">
-        <img alt="File:Ic check box outline blank 48px.svg" 
-        src="images/Ic_check_box_outline_blank_48px.svg" />
-    </slot>
-    </div>
-    <h2><slot name="title">All-in-one solution</slot></h2>
-    <span class="callout">
-    <slot name="callout">
-    </slot>
-    <p><slot name="body">
-       No need to buy plugins and register with thousands of service providers
-       </slot>
-    </p>
-</template>
-
-<script>
-/* usp-card */
-customElements.define('usp-card',
-    class extends HTMLElement {
-        constructor() {
-            super();
-            let template = document.getElementById('usp-card');
-            let templateContent = template.content;
-            const shadowRoot = this.attachShadow({mode: 'open'})
-                                    .appendChild(templateContent.cloneNode(true));
-        }
-});
-</script>
+<primary-button></primary-button>
 
 <p>Default Card:</p>
 <usp-card></usp-card>
@@ -120,6 +84,19 @@ customElements.define('usp-card',
 </usp-card>
 <usp-card></usp-card>
 <usp-card></usp-card>
-</div>
 
+<template id="usp-grid">
+    <style>
+        #wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+    <div id="wrapper">
+        <slot></slot>
+    </div>
+</template>
+
+</div>
+</body>
 </html>

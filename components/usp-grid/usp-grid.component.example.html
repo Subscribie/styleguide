@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" type="text/css" href="/style.css" >
+<script src="/js/fetchComponents.js"></script>
+
+<script>
+components = ['usp-card', 'usp-grid'];
+fetchComponents(components);
+</script>
+
+<body>
+<h1>&lt;usp-grid&gt;</h1>
+<p>Use as many &lt;usp-grid&gt; as you like. They will always
+display in a grid</p>
+<usp-grid>
+    <usp-card></usp-card>
+    <usp-card></usp-card>
+    <usp-card></usp-card>
+    <usp-card></usp-card>
+    <usp-card></usp-card>
+    <usp-card></usp-card>
+    <usp-card></usp-card>
+</usp-grid>
+
+<h1>We may mix multiple <em>&lt;usp-card&gt</em> types in a grid
+
+<usp-grid>
+    <usp-card></usp-card>
+    <usp-card>
+        <span slot="title">Detailed payment history</span>
+        <span slot="image">
+        <img alt="File:credit card.svg" 
+        src="/images/credit-card.svg" />
+        </span>
+        <span slot="body">
+        Your accountant will say thank you due to well-organised reports
+        </span>
+    </usp-card>
+    <usp-card>
+        <span slot="title">Easy custom domains</span>
+        <i class="callout" slot="callout">soon</i>
+        <span slot="image">
+        <img alt="File:credit card.svg" 
+        src="/images/credit-card.svg" />
+        </span>
+        <span slot="body">
+        Connect the domain name of your choice with a few clicks
+        </span>
+    </usp-card>
+    <usp-card></usp-card>
+    <usp-card></usp-card>
+</usp-grid>
+
+</div>
+</body>
+</html>

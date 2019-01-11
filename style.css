@@ -25,3 +25,11 @@ p {
 p.subtext {
     color: #7D7D7D;
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}

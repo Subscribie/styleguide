@@ -1,0 +1,35 @@
+<!DOCTYPE html>                                                                  
+<html>
+<link rel="stylesheet" type="text/css" href="/styleguide/style.css" >
+<script src="/styleguide/js/fetchComponents.js"></script>
+
+<script>
+
+components = ['nav-bar'];
+
+fetchComponents(components);
+
+</script>
+<body>
+
+<h1>&lt;nav-bar&gt;<button>Open</button></h1>
+
+<p>The mobile friendly nav bar.</p>
+
+<ul>
+    <li>Easy for large thumbs</li>
+    <li>Whilst walking</li>
+    <li>Call to action link highlighted</li>
+    <li>Inspired by netlify</li>
+</ul>
+
+
+
+<script>
+    document.querySelector('button').addEventListener('click', function() {
+        document.body.appendChild(document.createElement('nav-bar'));
+    });
+</script>
+
+</body>
+</html>

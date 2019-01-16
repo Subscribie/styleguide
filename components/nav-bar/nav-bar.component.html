@@ -1,6 +1,8 @@
 <template id="nav-bar">                                                     
     <link rel="stylesheet" type="text/css" href="/styleguide/style.css" >
     <style>
+    @media (max-width: 576px)
+    {
         .modal {
             box-sizing: border-box;
             display: flex;
@@ -65,7 +67,36 @@
             background: #2CDFA8;
             color: #fff;
         }
-        </style>
+    } /* End max width for mobile nav breakpoint */
+    @media (min-width: 576px)
+    {
+        nav {
+            background-color: #42A8CD;
+        }
+        a, a:visited, header h2{
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+        }
+        section {
+            display: flex; 
+            margin-left: 1em;
+        } 
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 0px;
+        }   
+        ul:last-child {
+            color: red;
+        }
+        .button {
+            display: none;
+        }
+    }
+    </style>
 
     <nav id="menu" class="modal">
       <section>
@@ -77,7 +108,7 @@
         </svg>
         </a>
         <header>
-                <h2>Menu</h2>
+                <h2>Subscribie</h2>
         </header>
         <ul>
           <li><a href="#">Home</a></li>
@@ -88,5 +119,4 @@
         </ul>
       </section>
     </nav>
-
 </template>

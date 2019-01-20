@@ -3,9 +3,24 @@
     <style>
     @media (max-width: 576px)
     {
-        .modal {
+        #mobile-menu-nav-toggle {
             box-sizing: border-box;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            min-height: 57px;
+            background-color: #42A8CD;
+        }
+        #mobile-menu-nav-toggle span {
+            font-weight: 600;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+            color: #fff;
+        }
+        .modal {
+            box-sizing: border-box;
+            display: none;
             align-items: flex-start;
             justify-content: flex-end;
             width: 100%;
@@ -70,6 +85,9 @@
     } /* End max width for mobile nav breakpoint */
     @media (min-width: 576px)
     {
+        #mobile-menu-nav-toggle {
+            display: none;
+        }
         nav {
             background-color: #42A8CD;
         }
@@ -93,7 +111,14 @@
             display: none;
         }
     }
+
+
     </style>
+
+    <div id="mobile-menu-nav-toggle">
+        <span>Subscribie</span>
+        <span id="button-close" styl="display:block">Menu</span>
+    </div>
 
     <nav id="menu" class="modal">
       <section>

@@ -10,6 +10,12 @@ customElements.define('nav-bar',
         }
 
         connectedCallback() {
+            let btnClose = this.shadowRoot.querySelector('#button-close');
+            btnClose.addEventListener('click', function() {
+                //Open it
+                btn.parentElement.parentElement.style.display = 'flex';
+            });
+
             // Close when click close icon
             let btn = this.shadowRoot.querySelector('.button--close');
             btn.addEventListener('click', function() {

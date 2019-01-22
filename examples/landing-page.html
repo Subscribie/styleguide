@@ -1,0 +1,90 @@
+<!DOCTYPE html>                                                                  
+<html>
+<link rel="stylesheet" type="text/css" href="../style.css" >
+<script src="../js/fetchComponents.js"></script>
+
+<script>
+
+components = ['nav-bar', 'usp-card', 'usp-grid'];
+
+fetchComponents(components);
+
+</script>
+<body>
+
+<div id="lead">
+<nav-bar></nav-bar>
+<h1>Start taking recurring payments in less than 8 minutes </h1>
+
+<p>
+Subscribie provides everything you need to  bring your business model into   
+the 21st century with no pain at all.
+</p>                                                                         
+
+</div><!-- end lead -->
+
+<div id="lead-child">
+<h2>Built to power even the smallest businesses</h2>
+<p>
+Create a basic site or integrate Sibscribie into your existing store to start taking recurring payment along with additional features:
+</p>
+
+<usp-card>
+    <span slot="title">All-in-one solution</span>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="/styleguide/images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    No need to buy plugins and register with thousands of service providers
+    </span>
+</usp-card>
+
+<usp-card>
+    <span slot="title">Detailed payment history</span>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="/styleguide/images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    Your accountant will say thank you due to well-organised reports
+    </span>
+</usp-card>
+
+<usp-card>
+    <span slot="title">Easy custom domains</span>
+    <i class="callout" slot="callout">soon</i>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="/styleguide/images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    Connect the domain name of your choice with a few clicks
+    </span>
+</usp-card>
+
+<usp-card>
+    <span slot="title">Security taken seriously</span>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="/styleguide/images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    Your data is backed up every day and securely stored with GDPR in mind
+    </span>
+</usp-card>
+
+<usp-card>
+    <span slot="title">No surprises</span>
+    <span slot="image">
+    <img alt="File:credit card.svg" 
+    src="/styleguide/images/credit-card.svg" />
+    </span>
+    <span slot="body">
+    We are completely honest about the service we provide and its pricing
+    </span>
+</usp-card>
+</div><!-- end lead-child -->
+
+</body>
+</html>

@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@media (max-width: 576px) {
+
+    #lead h1 {
+        color: #FFFFFF;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 36px;
+    }
+
+} /* End max width for mobile nav breakpoint */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F8F8F8;
@@ -12,6 +25,21 @@ h1 {
     letter-spacing: 0.5px;
     line-height: 56px;
 }
+
+#lead {
+    box-sizing: border-box;
+    padding: 8px;
+    background: linear-gradient(225deg, #42A8CD 0%, #26749B 100%);
+}
+
+#lead h1 {
+   color: #FFFFFF;   
+}
+
+#lead p {
+    color: #FFFFFF;
+}
+
 h2 {
     color: #424242; 
     font-family: Poppins;   
@@ -33,3 +61,4 @@ a {
 ul {
     list-style: none;
 }
+
